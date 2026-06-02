@@ -1,0 +1,40 @@
+body{margin: 0;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-areas:
+    "header header"
+    "menu main"
+    "footer footer";}
+
+header{grid-area: header;
+    background: blue;
+    color: white;
+    text-align: center;
+    padding: 15px;}
+
+aside{grid-area: menu;
+    background: lightgray;
+    padding: 10px;}
+
+main{grid-area: main;
+    padding: 10px;}
+
+.noticias{display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;}
+
+.destaque{background: orange;
+    padding: 20px;
+    height: 550px;
+    grid-column: span 2;
+    grid-row: span 2;}
+
+.card{background: #ddd;
+    padding: 20px;
+    height: 250px;}
+
+footer{grid-area: footer;
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 15px;}
